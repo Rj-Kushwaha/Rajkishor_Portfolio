@@ -219,6 +219,38 @@ body.light-theme {
     gap: 12px;
 }
 
+.resume-preview {
+    margin-top: 28px;
+    overflow: hidden;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.resume-preview iframe {
+    display: block;
+    width: 100%;
+    height: min(78vh, 900px);
+    min-height: 520px;
+    border: 0;
+    background: #fff;
+}
+
+.resume-preview p {
+    padding: 12px 18px;
+    color: var(--text-secondary);
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.resume-preview p a {
+    color: var(--accent-two);
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
 
 /* =========================================
    HEADER
@@ -1691,6 +1723,11 @@ body.light-theme .floating-card {
 
     .resume-card-actions .btn {
         width: 100%;
+    }
+
+    .resume-preview iframe {
+        height: 68vh;
+        min-height: 420px;
     }
 
     .hero {
