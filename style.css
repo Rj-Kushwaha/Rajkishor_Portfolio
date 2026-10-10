@@ -158,12 +158,65 @@ body.light-theme {
     color: var(--text-secondary);
 }
 
-.resume-buttons {
+.resume-section .section-heading {
+    margin-bottom: 36px;
+}
+
+.resume-card {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 25px;
+    gap: 28px;
+    padding: 30px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    box-shadow: var(--shadow);
+}
+
+.resume-card-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.resume-icon {
+    display: grid;
+    flex: 0 0 64px;
+    width: 64px;
+    height: 64px;
+    place-items: center;
+    border: 1px solid rgba(108, 99, 255, 0.22);
+    border-radius: 16px;
+    background: linear-gradient(135deg, rgba(108, 99, 255, 0.18), rgba(0, 194, 255, 0.12));
+    color: var(--accent-two);
+    font-size: 1.6rem;
+}
+
+.resume-card-label {
+    margin-bottom: 5px;
+    color: var(--accent-two);
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1.5px;
+}
+
+.resume-card-info h3 {
+    margin-bottom: 4px;
+    font-family: "Space Grotesk", sans-serif;
+    font-size: 1.25rem;
+}
+
+.resume-card-description {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.resume-card-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
 }
 
 
@@ -1612,6 +1665,32 @@ body.light-theme .floating-card {
 
     .section {
         padding: 80px 0;
+    }
+
+    .resume-card {
+        align-items: stretch;
+        padding: 24px;
+    }
+
+    .resume-card-info {
+        align-items: flex-start;
+        gap: 14px;
+    }
+
+    .resume-icon {
+        flex-basis: 52px;
+        width: 52px;
+        height: 52px;
+        border-radius: 13px;
+        font-size: 1.3rem;
+    }
+
+    .resume-card-actions {
+        flex-direction: column;
+    }
+
+    .resume-card-actions .btn {
+        width: 100%;
     }
 
     .hero {
